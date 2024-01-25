@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="time.css">
+</head>
+<body>
+
+<h2>Task Timer</h2>
+
+<label for="taskName">Task Name:</label>
+<input type="text" id="taskName"><br>
+
+<label for="taskDescription">Task Description:</label>
+<input type="text" id="taskDescription"><br>
+
+<button id="startStopBtn" onclick="startStopTimer()">Start timer</button>
+<button id="deleteBtn" onclick="deleteRow()">Delete Row</button>
+
+<p id="timerDisplay">Timer: 00:00:00</p>
+
+<table id="taskTable">
+  <tr>
+    <th>Task</th>
+    <th>Description</th>
+    <th>Duration</th>
+  </tr>
+</table>
+</body>
+<script src="time.js"></script>
+</html>
